@@ -18,6 +18,18 @@ ul {
     font-weight: bold;
 }
 
+.navbar-nav .nav-item:first-child .dropdown-menu {
+    background-color: rgb(53, 79, 101);
+}
+
+.navbar-nav .nav-item:first-child .dropdown-menu li a {
+    color: white;
+}
+
+.navbar-nav .nav-item:first-child .dropdown-menu li a:hover {
+    background-color: rgba(128, 128, 128, 0.3);
+}
+
 .hero {
     background-color: #1abb9b;
 }
@@ -94,7 +106,7 @@ footer .top .col {
     color: white;
 }
 
-footer .top .col  i {
+footer .top .col i {
     opacity: .7;
     cursor: pointer;
     height: 3rem;
@@ -106,7 +118,7 @@ footer .top .col  i {
     background-color: var(--bg-color-footer-top);
 }
 
-footer .top .col  i:hover {
+footer .top .col i:hover {
     transition: .3s;
     opacity: 1;
 }
