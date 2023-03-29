@@ -79,27 +79,29 @@ ul {
 }
 
 .section.portfolio .row img {
+    max-width: 100%;
     border-radius: 10px;
 }
 
-.section.about .btn-download {
+.section.about .btn_download {
     border-color: white;
     background-color: #1ABB9BFF;
     color: white;
 }
 
-.section.about .btn-download:hover {
-    background-color: #0E8E79FF; /* Set a darker shade of the background color on hover */
+.section.contact-me .btn_submit {
+    background-color: #1ABB9BFF;
+    color: white;
+}
+
+.section.about .btn_download:hover,
+.section.contact-me .btn_submit:hover {
+    background-color: #0E8E79FF;
 }
 
 footer .top {
     padding: var(--pad-footer-top);
     background-color: var(--bg-color-footer-top);
-}
-
-footer .bot {
-    padding: var(--pad-footer-bot);
-    background-color: var(--bg-color-footer-bot);
 }
 
 footer .top .col {
@@ -121,4 +123,9 @@ footer .top .col i {
 footer .top .col i:hover {
     transition: .3s;
     opacity: 1;
+}
+
+footer .bot {
+    padding: var(--pad-footer-bot);
+    background-color: var(--bg-color-footer-bot);
 }
