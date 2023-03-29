@@ -1,3 +1,9 @@
+:root {
+    --bg-color-footer-top: #3a536c;
+    --bg-color-footer-bot: #2c3e4f;
+    --pad-footer-top: 3rem;
+    --pad-footer-bot: 2rem;
+}
 
 ul {
     list-style: none;
@@ -22,6 +28,7 @@ ul {
 
 .container .row .title {
     font-weight: 600;
+    font-size: 3rem;
 }
 
 .bar {
@@ -64,11 +71,42 @@ ul {
 }
 
 .section.about .btn-download {
-    border-color: #FFFFFF;
+    border-color: white;
     background-color: #1ABB9BFF;
-    color: #FFFFFF;
+    color: white;
 }
 
 .section.about .btn-download:hover {
     background-color: #0E8E79FF; /* Set a darker shade of the background color on hover */
+}
+
+footer .top {
+    padding: var(--pad-footer-top);
+    background-color: var(--bg-color-footer-top);
+}
+
+footer .bot {
+    padding: var(--pad-footer-bot);
+    background-color: var(--bg-color-footer-bot);
+}
+
+footer .top .col {
+    color: white;
+}
+
+footer .top .col  i {
+    opacity: .7;
+    cursor: pointer;
+    height: 3rem;
+    aspect-ratio: 1 / 1;
+    line-height: 3rem;
+    vertical-align: center;
+    border-radius: 50%;
+    border: 1px solid white;
+    background-color: var(--bg-color-footer-top);
+}
+
+footer .top .col  i:hover {
+    transition: .3s;
+    opacity: 1;
 }
