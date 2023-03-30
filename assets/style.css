@@ -5,6 +5,10 @@
     --pad-footer-bot: 2rem;
 }
 
+body {
+    padding-top: 56px; /*    TO EXCLUDE OVERLAY OF FIXED NAVBAR    */
+}
+
 ul {
     list-style: none;
 }
@@ -78,10 +82,43 @@ ul {
     background-color: #2c3e4f;
 }
 
-.section.portfolio .row img {
+/*****************************************
+    PORTFOLIO CONTENT HOVER START
+*****************************************/
+.section.portfolio .row .content > img{
     max-width: 100%;
     border-radius: 10px;
 }
+
+.section.portfolio .content {
+    cursor: pointer;
+    position: relative;
+    max-width: 100%;
+}
+
+.section.portfolio .content:hover .hover-overlay {
+    opacity: 1;
+}
+
+.section.portfolio .overlay-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.section.portfolio .hover-overlay {
+    position: absolute;
+    inset: 0;   /*    replace top,bot,left,right    */
+    opacity: 0;
+    transition: .3s ease;
+    background-color: rgba(0, 223, 100, 0.3);
+    border-radius: 10px;
+}
+/*****************************************
+    PORTFOLIO CONTENT HOVER END
+*****************************************/
 
 .section.about .btn_download {
     border-color: white;
